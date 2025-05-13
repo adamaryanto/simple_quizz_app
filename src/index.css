@@ -1,0 +1,444 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+/* Form Login */
+.wrapperLogin {
+  width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.wrapperLogin h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.wrapperFormLogin {
+  text-align: left;
+}
+
+.wrapperFormLogin label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.inputLoginEmail,
+.inputLoginPassword {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.inputLoginEmail:focus,
+.inputLoginPassword:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.btnLogin {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnLogin:hover {
+  background-color: #0056b3;
+}
+/* Form Login End */
+
+/* Registrasi Start */
+
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* LOGIN */
+.wrapperLogin,
+.wrapperRegis {
+  width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.wrapperLogin h2,
+.wrapperRegis h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.wrapperFormLogin,
+.wrapperFormRegis {
+  text-align: left;
+}
+
+.wrapperFormLogin label,
+.wrapperFormRegis label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.inputLoginEmail,
+.inputLoginPassword,
+.inputRegisName,
+.inputRegisEmail,
+.inputRegisPassword {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.inputLoginEmail:focus,
+.inputLoginPassword:focus,
+.inputRegisName:focus,
+.inputRegisEmail:focus,
+.inputRegisPassword:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.btnLogin,
+.btnRegis {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnLogin:hover,
+.btnRegis:hover {
+  background-color: #0056b3;
+}
+
+.wrapperRegis p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.wrapperRegis p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.wrapperRegis p a:hover {
+  text-decoration: underline;
+}
+
+
+/* Registrasi End */
+
+/* Dashboard Start */
+
+/* Wrapper untuk dashboard */
+.wrapperDashboard {
+  
+  
+  margin: 0 auto;
+}
+
+/* Navbar Dashboard */
+.navbarDashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+.navbarDashboard h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.itemDashboard{
+  display: flex;
+  
+}
+.itemDashboard p {
+  font-size: 14px;
+  color: white;
+  margin: 20px;
+}
+
+.itemDashboard a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.itemDashboard a:hover {
+  text-decoration: underline;
+}
+
+/* Container untuk card */
+.wrapperCard ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Card tiap kategori */
+.wrapperCard ul li {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrapperCard ul li h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapperCard ul li h2:nth-child(2) {
+  font-size: 16px;
+  color: #28a745;
+}
+
+.wrapperCard ul li p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Tombol Mulai Quizz */
+.wrapperCard ul li button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+/* Efek hover pada tombol */
+.btnstartQuizz:hover {
+  background-color: #0056b3;
+}
+
+.btnLogOut {
+  background-color: #e74c3c; /* Merah tua */
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btnLogOut:hover {
+  background-color: #c0392b; /* Merah lebih gelap saat hover */
+}
+
+.btnLogOut:active {
+  transform: scale(0.98);
+}
+
+/* Dashboard End */
+
+/* Page Quizz */
+
+/* File: PageQuiz.css */
+.wrapperHalamanQuiz {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.navQuizPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.wrapperTimer {
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.wrapperContent {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.wrapperContent p {
+    font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.wrapperContent button {
+    display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapperContent button:hover {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+  transform: scale(1.03);
+}
+.wrapperContent button:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+.animatedAnswer {
+  background-color: #c0c0c0 !important;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: scale(1.02);
+}
+.btnSubmitAnswer {
+  background-color: #10b981; /* hijau emerald */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnSubmitAnswer:hover {
+  background-color: #059669; /* lebih gelap saat hover */
+  transform: translateY(-2px);
+}
+
+.btnSubmitAnswer:active {
+  background-color: #047857;
+  transform: translateY(0);
+}
+/* result jawaban */
+.resultContainer {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.resultTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.resultScore {
+  font-size: 40px;
+  font-weight: bold;
+  color: #10b981; /* hijau */
+  margin-bottom: 16px;
+}
+
+.resultMessage {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+.btnRetry {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnRetry:hover {
+  background-color: #2563eb;
+}
