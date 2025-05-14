@@ -34,7 +34,7 @@ function Dashboard() {
         <nav className='navbarDashboard'>
             <h1>Quizz-Appz</h1>
             <div className='itemDashboard'>
-                <p>{userName? userName: 'Nama Kamu'}</p>
+                <p>{userName? userName: ''}</p>
                 {!userName&&(
                     <>
                 <p ><Link to='/login' >Login</Link></p>

@@ -374,26 +374,26 @@ body {
   transform: scale(1.02);
 }
 .btnSubmitAnswer {
-  background-color: #10b981; /* hijau emerald */
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Warna biru yang sama dengan login/register */
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* jarak dari elemen sebelumnya */
 }
 
 .btnSubmitAnswer:hover {
-  background-color: #059669; /* lebih gelap saat hover */
-  transform: translateY(-2px);
+  background-color: #0056b3;
 }
 
 .btnSubmitAnswer:active {
-  background-color: #047857;
-  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #3730A3;
 }
 /* result jawaban */
 .resultContainer {

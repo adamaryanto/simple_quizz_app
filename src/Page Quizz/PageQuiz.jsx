@@ -4,7 +4,8 @@ import { faArrowLeft, faArrowRight, faCoffee } from '@fortawesome/free-solid-svg
 
 function PageQuiz() {
   const [page,setPage] = useState(1)
-  const [isAnswer,setIsAnswer]= useState(false)
+
+  const [answerQuestion, setAnswerQuestion] = useState([])
   const [points,setPoints]= useState(0)
   const [answer,setAnswer] = useState(0)
  const question = [
@@ -19,6 +20,24 @@ function PageQuiz() {
     answer: ['sukarno', 'mulyono', 'ahok', 'fufufafa'],
     correctAnswer: 0,
     page:2
+   },
+   {
+    questions: 'Apa Warna Bendera Indonesia',
+    answer: ['Merah Putih','Putih Merah', 'Biru Merah Putih', 'Coklat'],
+    correctAnswer: 0,
+    page:3
+   },
+   {
+    questions: 'Siapa Presiden Rusia',
+    answer: ['Puting', 'Trump', 'Putin', 'Mulyono'],
+    correctAnswer: 2,
+    page:4
+   },
+   {
+    questions: 'Apa Nama Ibukota Jepang',
+    answer: ['Jakarta', 'Jawa', 'Sunda', 'Tokyo'],
+    correctAnswer: 3,
+    page:5
    }
 
  ]
@@ -26,28 +45,30 @@ function PageQuiz() {
  function nextPage(){
   if(page === question.length)return
   setPage(page+1)
-  setIsAnswer(false)
- }
- function previousPage(){
+
+}
+function previousPage(){
   if(page ===1)return
   setPage(page-1)
+
+  
  }
  function handleClick(index){
    setAnswer(answer+1)
-   if(index!==currentQuestion.correctAnswer&& points === currentQuestion.page){
-     setPoints(points-1)
-     setIsAnswer(false)
+ 
+   const alreadyAnswerPage = answerQuestion.includes(page)
+   if(alreadyAnswerPage) return
 
-   }
-   if(isAnswer ) return
-  if(index===currentQuestion.correctAnswer){
-    setIsAnswer(true)
-    setPoints(points+1)
-  }
+   if(index===currentQuestion.correctAnswer){
+     setAnswerQuestion([...answerQuestion, page])
+     
+     setPoints(points+1)
+    }
 }
 console.log('Points', points)
-console.log(isAnswer)
+
 console.log('jumlah Jawabb', answer)
+console.log('Halaman Yang Sudah Dijawab', answerQuestion)
   return (
     <div className='wrapperHalamanQuiz'>
         <nav className='navQuizPage'>
@@ -59,7 +80,7 @@ console.log('jumlah Jawabb', answer)
             <FontAwesomeIcon icon={faArrowRight} onClick={nextPage} style={{cursor: 'pointer'}}/>
         </nav>
         <div className='wrapperContent'>
-          <p>{currentQuestion.page}.{currentQuestion.questions}</p>
+          <p onCopy={(e)=> e.preventDefault()} style={{userSelect: 'none'}} onCut={(e)=>e.preventDefault()}>{currentQuestion.page}.{currentQuestion.questions}</p>
           <h1>{currentQuestion.answer.map((answer,index)=>(
             <button  
               key={index}
@@ -69,6 +90,9 @@ console.log('jumlah Jawabb', answer)
             </button>
           ))}</h1>
         </div>
+          {page ===question.length&&(
+            <button className='btnSubmitAnswer'>Kirim</button>
+          )}
 
 
       
